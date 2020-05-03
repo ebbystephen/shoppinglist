@@ -177,3 +177,5 @@ input:checked + .slider:before {
     .slider.round:before {
         border-radius: 50%;
     }
+
+    .body-content{padding:0px!important;}
