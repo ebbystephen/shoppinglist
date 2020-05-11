@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Shopping List
+    </title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="Site.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Site.css" rel="stylesheet" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <style>
+        .checkbox-div {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="./" class="navbar-brand">Shopping List</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div id="result">
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary btn-submit">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div id="v_tabs">
+                <ul>
+                    <li><a href="#v_tabs-2">User</a></li>
+                    <li><a href="#v_tabs-3">Admin</a></li>
+                </ul>
+                <div id="v_tabs-2">
+                    <div id="usr_tabs" class="row">
+                        <ul>
+                            <li><a href="#usr_tabs-1">List <span id="usr_tabs-1-badge" class="badge"></span></a></li>
+                            <li><a href="#usr_tabs-2">Cart <span id="usr_tabs-2-badge" class="badge"></span></a></li>
+                            <li><a href="#usr_tabs-3">Pending <span id="usr_tabs-3-badge" class="badge"></span></a></li>
+                        </ul>
+                        <div id="usr_tabs-1" class="col-md-12">
+                            <div class="accordion">
+                            </div>
+                        </div>
+                        <div id="usr_tabs-2" class="col-md-12">
+                            <div class="purchase_accordion">
+                            </div>
+                        </div>
+                        <div id="usr_tabs-3" class="col-md-12">
+                            <div class="pending_accordion">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="v_tabs-3">
+                    <div id="tabs" class="row">
+                        <ul>
+                            <li><a href="#tabs-1">Category</a></li>
+                            <li><a href="#tabs-2">Items</a></li>
+                            <li><a href="#tabs-3">Settings</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <div>
+                                <div class="form-group">
+                                    <label for="cat_name">Category:</label>
+                                    <input type="text" class="form-control" id="cat_name" placeholder="Enter category">
+                                </div>
+                                <input type="button" class="btn btn-default add_c" value="Save" />
+                            </div>
+                            <div style="margin: 10px 0px;">
+                                <div class="form-group">
+                                    <table id="table_c" class="table table-bordered table-striped">
+                                        <tr>
+                                            <th>Category</th>
+                                        </tr>
+                                    </table>
+                                    <ul class="pagination pg_cat pagination-sm"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-2">
+                            <div>
+                                <div class="form-group">
+                                    <label for="categories">Category:</label>
+                                    <select id="categories" class="form-control"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="item_name">Item:</label>
+                                    <input type="text" class="form-control" id="item_name" placeholder="Enter item">
+                                </div>
+                                <input type="button" class="btn btn-default add_i" value="Save" />
+                                <div style="margin: 10px 0px;">
+                                    <table id="table_i" class="table table-bordered table-striped">
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Item</th>
+                                        </tr>
+                                    </table>
+                                    <ul class="pagination pg_item pagination-sm"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabs-3" class="col-md-4">
+                            <div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="sel1">Items per page:</label>
+                                        <select class="form-control" id="sel_page" disabled>
+                                            <option value="5">5</option>
+                                            <option value="10">10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Reset Shopping List</label>
+                                        <label class="switch">
+                                            <input type="checkbox" class="reset_chk">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <input type="button" class="btn btn-default save_c" value="Save Changes" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <footer class="container">
+            <p>&copy; 2020 - Shopping List</p>
+        </footer>
+    </div>
+</body>
+</html>

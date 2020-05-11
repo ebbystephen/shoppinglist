@@ -19,82 +19,82 @@ function LoadFromJSON(key) {
             { id: 1005, val: 'ബേക്കറി' }];
         } else if (key == ITEM_LSN) {
             jsonArray = [{ id: 10000, catid: 1000, val: 'മല്ലിപൊടി', sel: 0, pur: 0 },
-                { id: 10001, catid: 1000, val: 'മുളകുപൊടി', sel: 0, pur: 0 },
-                { id: 10002, catid: 1000, val: 'മഞ്ഞൾപൊടി', sel: 0, pur: 0 },
-                { id: 10003, catid: 1000, val: 'പുട്ടുപൊടി', sel: 0, pur: 0 },
-                { id: 10004, catid: 1000, val: 'അപ്പപൊടി', sel: 0, pur: 0 },
-                { id: 10005, catid: 1000, val: 'ഗോതമ്പ് പൊടി', sel: 0, pur: 0 },
-                { id: 10006, catid: 1000, val: 'മസാലപൊടി', sel: 0, pur: 0 },
-                { id: 10007, catid: 1000, val: 'മട്ട അരി', sel: 0, pur: 0 },
-                { id: 10008, catid: 1000, val: 'പച്ചരി', sel: 0, pur: 0 },
-                { id: 10009, catid: 1000, val: 'ബിരിയാണി അരി', sel: 0, pur: 0 },
-                { id: 10010, catid: 1000, val: 'ഉപ്പ്', sel: 0, pur: 0 },
-                { id: 10011, catid: 1000, val: 'പൊന്നി അരി', sel: 0, pur: 0 },
-                { id: 10012, catid: 1000, val: 'കോഴിമുട്ട', sel: 0, pur: 0 },
-                { id: 10013, catid: 1000, val: 'താറാവ് മുട്ട', sel: 0, pur: 0 },
-                { id: 10014, catid: 1000, val: 'കടല', sel: 0, pur: 0 },
-                { id: 10015, catid: 1000, val: 'ചെറുപയർ', sel: 0, pur: 0 },
-                { id: 10016, catid: 1000, val: 'വലിയപയർ', sel: 0, pur: 0 },
-                { id: 10017, catid: 1000, val: 'ഉഴുന്ന്', sel: 0, pur: 0 },
-                { id: 10018, catid: 1000, val: 'തുവര പരിപ്പ്', sel: 0, pur: 0 },
-                { id: 10019, catid: 1000, val: 'പീസ് പരിപ്പ്', sel: 0, pur: 0 },
-                { id: 10020, catid: 1000, val: 'പഞ്ചസാര', sel: 0, pur: 0 },
-                { id: 10021, catid: 1000, val: 'ചായപൊടി', sel: 0, pur: 0 },
-                { id: 10022, catid: 1000, val: 'വെളിച്ചെണ്ണ', sel: 0, pur: 0 },
-                { id: 10023, catid: 1000, val: 'തേങ്ങ', sel: 0, pur: 0 },
-                { id: 10024, catid: 1000, val: 'അച്ചാർ', sel: 0, pur: 0 },
-                { id: 10025, catid: 1000, val: 'ഉണക്കമുളക്', sel: 0, pur: 0 },
-                { id: 10026, catid: 1001, val: 'കോഴി', sel: 0, pur: 0 },
-                { id: 10027, catid: 1001, val: 'താറാവ്', sel: 0, pur: 0 },
-                { id: 10028, catid: 1001, val: 'പന്നി', sel: 0, pur: 0 },
-                { id: 10029, catid: 1001, val: 'പോത്ത്', sel: 0, pur: 0 },
-                { id: 10030, catid: 1001, val: 'മീൻ', sel: 0, pur: 0 },
-                { id: 10031, catid: 1002, val: 'പാൽ', sel: 0, pur: 0 },
-                { id: 10032, catid: 1002, val: 'തൈര്', sel: 0, pur: 0 },
-                { id: 10033, catid: 1002, val: 'ബട്ടർ', sel: 0, pur: 0 },
-                { id: 10034, catid: 1002, val: 'set curd', sel: 0, pur: 0 },
-                { id: 10035, catid: 1003, val: 'അച്ചിങ്ങ', sel: 0, pur: 0 },
-                { id: 10036, catid: 1003, val: 'തക്കാളി', sel: 0, pur: 0 },
-                { id: 10037, catid: 1003, val: 'ബീൻസ്', sel: 0, pur: 0 },
-                { id: 10038, catid: 1003, val: 'വെണ്ടക്ക', sel: 0, pur: 0 },
-                { id: 10039, catid: 1003, val: 'പാവക്ക', sel: 0, pur: 0 },
-                { id: 10040, catid: 1003, val: 'മത്തങ്ങ', sel: 0, pur: 0 },
-                { id: 10041, catid: 1003, val: 'പച്ചക്കായ', sel: 0, pur: 0 },
-                { id: 10042, catid: 1003, val: 'കോവക്ക', sel: 0, pur: 0 },
-                { id: 10043, catid: 1003, val: 'കുമ്പളങ്ങ', sel: 0, pur: 0 },
-                { id: 10044, catid: 1003, val: 'ക്യാരറ്റ്', sel: 0, pur: 0 },
-                { id: 10045, catid: 1003, val: 'നെല്ലിക്ക', sel: 0, pur: 0 },
-                { id: 10046, catid: 1003, val: 'കൂർക്ക', sel: 0, pur: 0 },
-                { id: 10047, catid: 1003, val: 'ചീര', sel: 0, pur: 0 },
-                { id: 10048, catid: 1003, val: 'വെള്ളിരിക്ക', sel: 0, pur: 0 },
-                { id: 10049, catid: 1003, val: 'പച്ച മാങ്ങ', sel: 0, pur: 0 },
-                { id: 10050, catid: 1003, val: 'ഉരുളകിഴങ്ങ്', sel: 0, pur: 0 },
-                { id: 10051, catid: 1003, val: 'സവാള', sel: 0, pur: 0 },
-                { id: 10052, catid: 1003, val: 'ഉള്ളി', sel: 0, pur: 0 },
-                { id: 10053, catid: 1003, val: 'വെളുത്തുള്ളി', sel: 0, pur: 0 },
-                { id: 10054, catid: 1003, val: 'വേപ്പില', sel: 0, pur: 0 },
-                { id: 10055, catid: 1003, val: 'പച്ചമുളക്', sel: 0, pur: 0 },
-                { id: 10056, catid: 1003, val: 'ഇഞ്ചി', sel: 0, pur: 0 },
-                { id: 10057, catid: 1004, val: 'Soap', sel: 0, pur: 0 },
-                { id: 10058, catid: 1004, val: 'അലക്ക് സോപ്പ്', sel: 0, pur: 0 },
-                { id: 10059, catid: 1004, val: 'Washing powder', sel: 0, pur: 0 },
-                { id: 10060, catid: 1004, val: 'മെഴുകുതിരി', sel: 0, pur: 0 },
-                { id: 10061, catid: 1004, val: 'തീപ്പെട്ടി', sel: 0, pur: 0 },
-                { id: 10062, catid: 1004, val: 'Tooth paste', sel: 0, pur: 0 },
-                { id: 10063, catid: 1004, val: 'Hand wash', sel: 0, pur: 0 },
-                { id: 10064, catid: 1004, val: 'Dish wash', sel: 0, pur: 0 },
-                { id: 10065, catid: 1004, val: 'Floor cleaner', sel: 0, pur: 0 },
-                { id: 10066, catid: 1004, val: 'Kitchen Tissue', sel: 0, pur: 0 },
-                { id: 10067, catid: 1005, val: 'Cake', sel: 0, pur: 0 },
-                { id: 10068, catid: 1005, val: 'Puffs', sel: 0, pur: 0 },
-                { id: 10069, catid: 1005, val: 'Samosa', sel: 0, pur: 0 },
-                { id: 10070, catid: 1005, val: 'Bread', sel: 0, pur: 0 },
-                { id: 10071, catid: 1005, val: 'Bun', sel: 0, pur: 0 },
-                { id: 10072, catid: 1005, val: 'Biscuit', sel: 0, pur: 0 },
-                { id: 10073, catid: 1006, val: 'ഓറഞ്ച്', sel: 0, pur: 0 },
-                { id: 10074, catid: 1006, val: 'Apple', sel: 0, pur: 0 },
-                { id: 10075, catid: 1006, val: 'ഞാലി', sel: 0, pur: 0 },
-                { id: 10076, catid: 1006, val: 'കണ്ണൻ', sel: 0, pur: 0 }];
+            { id: 10001, catid: 1000, val: 'മുളകുപൊടി', sel: 0, pur: 0 },
+            { id: 10002, catid: 1000, val: 'മഞ്ഞൾപൊടി', sel: 0, pur: 0 },
+            { id: 10003, catid: 1000, val: 'പുട്ടുപൊടി', sel: 0, pur: 0 },
+            { id: 10004, catid: 1000, val: 'അപ്പപൊടി', sel: 0, pur: 0 },
+            { id: 10005, catid: 1000, val: 'ഗോതമ്പ് പൊടി', sel: 0, pur: 0 },
+            { id: 10006, catid: 1000, val: 'മസാലപൊടി', sel: 0, pur: 0 },
+            { id: 10007, catid: 1000, val: 'മട്ട അരി', sel: 0, pur: 0 },
+            { id: 10008, catid: 1000, val: 'പച്ചരി', sel: 0, pur: 0 },
+            { id: 10009, catid: 1000, val: 'ബിരിയാണി അരി', sel: 0, pur: 0 },
+            { id: 10010, catid: 1000, val: 'ഉപ്പ്', sel: 0, pur: 0 },
+            { id: 10011, catid: 1000, val: 'പൊന്നി അരി', sel: 0, pur: 0 },
+            { id: 10012, catid: 1000, val: 'കോഴിമുട്ട', sel: 0, pur: 0 },
+            { id: 10013, catid: 1000, val: 'താറാവ് മുട്ട', sel: 0, pur: 0 },
+            { id: 10014, catid: 1000, val: 'കടല', sel: 0, pur: 0 },
+            { id: 10015, catid: 1000, val: 'ചെറുപയർ', sel: 0, pur: 0 },
+            { id: 10016, catid: 1000, val: 'വലിയപയർ', sel: 0, pur: 0 },
+            { id: 10017, catid: 1000, val: 'ഉഴുന്ന്', sel: 0, pur: 0 },
+            { id: 10018, catid: 1000, val: 'തുവര പരിപ്പ്', sel: 0, pur: 0 },
+            { id: 10019, catid: 1000, val: 'പീസ് പരിപ്പ്', sel: 0, pur: 0 },
+            { id: 10020, catid: 1000, val: 'പഞ്ചസാര', sel: 0, pur: 0 },
+            { id: 10021, catid: 1000, val: 'ചായപൊടി', sel: 0, pur: 0 },
+            { id: 10022, catid: 1000, val: 'വെളിച്ചെണ്ണ', sel: 0, pur: 0 },
+            { id: 10023, catid: 1000, val: 'തേങ്ങ', sel: 0, pur: 0 },
+            { id: 10024, catid: 1000, val: 'അച്ചാർ', sel: 0, pur: 0 },
+            { id: 10025, catid: 1000, val: 'ഉണക്കമുളക്', sel: 0, pur: 0 },
+            { id: 10026, catid: 1001, val: 'കോഴി', sel: 0, pur: 0 },
+            { id: 10027, catid: 1001, val: 'താറാവ്', sel: 0, pur: 0 },
+            { id: 10028, catid: 1001, val: 'പന്നി', sel: 0, pur: 0 },
+            { id: 10029, catid: 1001, val: 'പോത്ത്', sel: 0, pur: 0 },
+            { id: 10030, catid: 1001, val: 'മീൻ', sel: 0, pur: 0 },
+            { id: 10031, catid: 1002, val: 'പാൽ', sel: 0, pur: 0 },
+            { id: 10032, catid: 1002, val: 'തൈര്', sel: 0, pur: 0 },
+            { id: 10033, catid: 1002, val: 'ബട്ടർ', sel: 0, pur: 0 },
+            { id: 10034, catid: 1002, val: 'set curd', sel: 0, pur: 0 },
+            { id: 10035, catid: 1003, val: 'അച്ചിങ്ങ', sel: 0, pur: 0 },
+            { id: 10036, catid: 1003, val: 'തക്കാളി', sel: 0, pur: 0 },
+            { id: 10037, catid: 1003, val: 'ബീൻസ്', sel: 0, pur: 0 },
+            { id: 10038, catid: 1003, val: 'വെണ്ടക്ക', sel: 0, pur: 0 },
+            { id: 10039, catid: 1003, val: 'പാവക്ക', sel: 0, pur: 0 },
+            { id: 10040, catid: 1003, val: 'മത്തങ്ങ', sel: 0, pur: 0 },
+            { id: 10041, catid: 1003, val: 'പച്ചക്കായ', sel: 0, pur: 0 },
+            { id: 10042, catid: 1003, val: 'കോവക്ക', sel: 0, pur: 0 },
+            { id: 10043, catid: 1003, val: 'കുമ്പളങ്ങ', sel: 0, pur: 0 },
+            { id: 10044, catid: 1003, val: 'ക്യാരറ്റ്', sel: 0, pur: 0 },
+            { id: 10045, catid: 1003, val: 'നെല്ലിക്ക', sel: 0, pur: 0 },
+            { id: 10046, catid: 1003, val: 'കൂർക്ക', sel: 0, pur: 0 },
+            { id: 10047, catid: 1003, val: 'ചീര', sel: 0, pur: 0 },
+            { id: 10048, catid: 1003, val: 'വെള്ളിരിക്ക', sel: 0, pur: 0 },
+            { id: 10049, catid: 1003, val: 'പച്ച മാങ്ങ', sel: 0, pur: 0 },
+            { id: 10050, catid: 1003, val: 'ഉരുളകിഴങ്ങ്', sel: 0, pur: 0 },
+            { id: 10051, catid: 1003, val: 'സവാള', sel: 0, pur: 0 },
+            { id: 10052, catid: 1003, val: 'ഉള്ളി', sel: 0, pur: 0 },
+            { id: 10053, catid: 1003, val: 'വെളുത്തുള്ളി', sel: 0, pur: 0 },
+            { id: 10054, catid: 1003, val: 'വേപ്പില', sel: 0, pur: 0 },
+            { id: 10055, catid: 1003, val: 'പച്ചമുളക്', sel: 0, pur: 0 },
+            { id: 10056, catid: 1003, val: 'ഇഞ്ചി', sel: 0, pur: 0 },
+            { id: 10057, catid: 1004, val: 'Soap', sel: 0, pur: 0 },
+            { id: 10058, catid: 1004, val: 'അലക്ക് സോപ്പ്', sel: 0, pur: 0 },
+            { id: 10059, catid: 1004, val: 'Washing powder', sel: 0, pur: 0 },
+            { id: 10060, catid: 1004, val: 'മെഴുകുതിരി', sel: 0, pur: 0 },
+            { id: 10061, catid: 1004, val: 'തീപ്പെട്ടി', sel: 0, pur: 0 },
+            { id: 10062, catid: 1004, val: 'Tooth paste', sel: 0, pur: 0 },
+            { id: 10063, catid: 1004, val: 'Hand wash', sel: 0, pur: 0 },
+            { id: 10064, catid: 1004, val: 'Dish wash', sel: 0, pur: 0 },
+            { id: 10065, catid: 1004, val: 'Floor cleaner', sel: 0, pur: 0 },
+            { id: 10066, catid: 1004, val: 'Kitchen Tissue', sel: 0, pur: 0 },
+            { id: 10067, catid: 1005, val: 'Cake', sel: 0, pur: 0 },
+            { id: 10068, catid: 1005, val: 'Puffs', sel: 0, pur: 0 },
+            { id: 10069, catid: 1005, val: 'Samosa', sel: 0, pur: 0 },
+            { id: 10070, catid: 1005, val: 'Bread', sel: 0, pur: 0 },
+            { id: 10071, catid: 1005, val: 'Bun', sel: 0, pur: 0 },
+            { id: 10072, catid: 1005, val: 'Biscuit', sel: 0, pur: 0 },
+            { id: 10073, catid: 1006, val: 'ഓറഞ്ച്', sel: 0, pur: 0 },
+            { id: 10074, catid: 1006, val: 'Apple', sel: 0, pur: 0 },
+            { id: 10075, catid: 1006, val: 'ഞാലി', sel: 0, pur: 0 },
+            { id: 10076, catid: 1006, val: 'കണ്ണൻ', sel: 0, pur: 0 }];
         }
         AddLocalStorage(key, JSON.stringify(jsonArray));
     }
@@ -244,17 +244,33 @@ function BindBadge() {
 function BindCheckBoxClick(tabId, attrId) {
     $(tabId + ' input[type=checkbox]').change(function () {
         Select_Item($(this).is(':checked'), $(this).val(), "id", attrId);
-
+        var $this = $(this);
+        var $parent = $this.parent();
+        var $checkboxdiv = $this.closest('div');
+        var totalCount = 0;
+        var checkedCount = 0;
         if ($(this).is(':checked')) {
             AlertMessage("Success", $(this).closest('label').text() + " selected successfully.");
+            if (tabId == PUR_LST_TAB) {
+                $checkboxdiv.prev('h3').find('span[class=badge]').html('hello');
+                console.log($checkboxdiv.prev('span').length);
+
+                $checkboxdiv.append($parent);
+            }
         } else {
             AlertMessage("Info", $(this).closest('label').text() + " removed successfully.");
+            if (tabId == PUR_LST_TAB) {
+                $checkboxdiv.prepend($parent);
+            }
         }
 
         if (tabId == USR_LST_TAB) {
             BindPurchase();
             BindPending();
         } else if (tabId == PUR_LST_TAB) {
+            totalCount = $checkboxdiv.find('input:checkbox').length;
+            checkedCount = $checkboxdiv.find('input:checkbox:checked').length;
+            $checkboxdiv.prev('h3').find('span[class=badge]').html(checkedCount + '/' + totalCount);
             BindPending();
         } else if (tabId == PEN_LST_TAB) {
             $(this).parent(".checkbox").fadeOut(500, function () { $(this).remove() });
@@ -402,14 +418,21 @@ function BindAccordion(accordionCtrl, categoryData, itemData, tabId, attrId) {
         var arr = [];
         categoryId = this.id;
         arr = $.grep(itemData, function (a) { return a.catid == categoryId });
+        if (tabId == PUR_LST_TAB) {
+            arr.sort(function (a, b) {
+                var x = a.pur; var y = b.pur;
+                return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+            });
+        }
         if (arr.length > 0) {
-            $(accordionCtrl).append('<h3>' + this.val + '</h3>');
             var fs;
             fs = $('<div class="checkbox-div" />');
             var checked;
+            var checkedCount = 0;
             $.each(arr, function () {
                 if (this[attrId] == 1) {
                     checked = 'checked';
+                    checkedCount += 1;
                 }
                 else {
                     checked = '';
@@ -417,6 +440,12 @@ function BindAccordion(accordionCtrl, categoryData, itemData, tabId, attrId) {
                 //fs.append('<label class="checkbox-inline"><input type="checkbox" ' + checked + ' value="' + this.id + '">' + this.val + '</label>');
                 fs.append('<label class="chk_container col-md-4 col-sm-6">' + this.val + '<input type="checkbox" ' + checked + ' value="' + this.id + '"><span class="checkmark"></span></label>');
             });
+            if (tabId == PUR_LST_TAB) {
+                $(accordionCtrl).append('<h3>' + this.val + ' <span class="badge">' + checkedCount + '/' + arr.length + '</span></h3>');
+            } else {
+                $(accordionCtrl).append('<h3>' + this.val + '</h3>');
+            }
+
             $(accordionCtrl).append(fs);
         }
     });
