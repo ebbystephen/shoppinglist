@@ -13,6 +13,10 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Payload
+        run: |
+        echo "${{github.event.client_payload.environment}}"
+        echo "${{github.event.event_type}}"
       - name: List Files
         run: |
           ls -a
