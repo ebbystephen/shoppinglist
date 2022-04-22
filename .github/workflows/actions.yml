@@ -1,6 +1,9 @@
 name: Actions Workflow
 on: 
-  push: 
+  repository_dispatch:
+    types:[build]
+    #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
+  #push: 
   #schedule:
     #- cron: "0/5 * * * *"
     #- cron: "0/6 * * * *"
