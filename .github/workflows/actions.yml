@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Payload
-        run: |
+        run:  |
         echo "${{github.event.client_payload.environment}}"
-        echo "${{github.event.event_type}}"
-      - name: List Files
+        #echo "${{github.event.event_type}}"
+      - name: List File
         run: |
           ls -a
           pwd
