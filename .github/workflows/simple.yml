@@ -1,5 +1,5 @@
 name : Shell Commands
-on : [pull-request]
+on : [pull_request]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
