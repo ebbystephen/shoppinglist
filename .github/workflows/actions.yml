@@ -14,9 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Payload
-        run: |
-        echo ${{github.event.client_payload.environment}}
-        echo ${{github.event.event_type}}
+        run: echo ${{github.event.event_type}}
+        #echo ${{github.event.client_payload.environment}}
       - name: List File
         run: |
           ls -a
