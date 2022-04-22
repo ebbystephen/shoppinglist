@@ -1,9 +1,22 @@
 name: Actions Workflow
 on: 
-  repository_dispatch:
-    types: [build]
+  #repository_dispatch:
+  #  types: [build]
     #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
-  #push: 
+  push: 
+    branches:
+      - master
+      #- 'feature/*' #matches feature/feature1, feature/feature2, does not match feaure/feautre1/feature2
+      #- 'feature/**' #matches feauture/feauter1, feature/feature1/featire
+      #- '!feature/feature3' # ignore branch
+    #tags:
+    #  - v1
+    #  - v1.*
+    #paths:
+    #  - '**.js' #invokes when there is change in js files
+    #  - '!filename.js'
+    #paths-ignore:
+    #  - 'docs/**' #any change in the docs path will run the actions
   #schedule:
     #- cron: "0/5 * * * *"
     #- cron: "0/6 * * * *"
@@ -14,7 +27,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Payload
-        run: echo ${{github.event.client_payload.environment}}
+        run: |
+          echo ${{github.event.client_payload.environment}}
+          echo ${{github.event.event_type}}
       - name: List File
         run: |
           ls -a
