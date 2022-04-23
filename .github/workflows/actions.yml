@@ -1,0 +1,56 @@
+name: Actions Workflow
+on: 
+  repository_dispatch:
+    types: [build]
+    #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
+  #push: 
+    #branches:
+    #  - master
+      #- 'feature/*' #matches feature/feature1, feature/feature2, does not match feaure/feautre1/feature2
+      #- 'feature/**' #matches feauture/feauter1, feature/feature1/featire
+      #- '!feature/feature3' # ignore branch
+    #tags:
+    #  - v1
+    #  - v1.*
+    #paths:
+    #  - '**.js' #invokes when there is change in js files
+    #  - '!filename.js'
+    #paths-ignore:
+    #  - 'docs/**' #any change in the docs path will run the actions
+  #schedule:
+    #- cron: "0/5 * * * *"
+    #- cron: "0/6 * * * *"
+  #pull_request:
+  #  types: [closed, assigned, opened, reopened]
+jobs: 
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Payload
+        run: |
+          echo ${{github.event.client_payload.environment}}
+          echo ${{github.event.event_type}}
+      - name: List File
+        run: |
+          ls -a
+          pwd
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
+          # git clone git@github:$GITHUB_REPOSITORY
+          # git checkout $GITHUB_SHA
+      - name : Checkout Actions
+        uses: actions/checkout@v1
+      - name: List Files After Checkout
+        run: |
+          ls -a
+          pwd
+      - name: Simple JS Action
+        id: greet
+        uses: actions/hello-world-javascript-action@v1
+        with: 
+          who-to-greet: 'Ebby Stephen'
+      - name: Log Greeting Time    
+        run: echo "${{ steps.greet.outputs.time }}"
+      
