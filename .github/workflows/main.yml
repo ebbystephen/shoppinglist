@@ -14,3 +14,4 @@ jobs:
         server: 198.38.92.241
         username: ebbystephen
         password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: 'shoppinglist.meebbydeals.com/wwwroot/'
